@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #c21500;
+    background: -webkit-gradient(to right, #ffc500, #c21500 );
+    background: linear-gradient(to right, #ffc500) , #c21500 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border: 10px;
+}
+.calculator form input{
+
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;  
+  background: transparent;  
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: -8px -8px 15px rgb(255, 255, 255, 0.1), 5px 5px 15px rgb(0, 0, 0, 0.2);
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: 20px solid #ffff;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+
+}
+
+form input.operator{
+    color: #1b98f5;
+}
+
+/* MEDZA QUERES */
+
+@media(max-width: 375px){
+    .calculator{
+        padding: 20px;
+    }
+
+    .calculator form input{
+        font-size: 16px;
+        width: 45px;
+        height: 45px;
+    }
+    form input.equal{
+        width: 120px;
+
+}
+}
